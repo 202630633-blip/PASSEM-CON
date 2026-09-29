@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>우리 반 땀 냄새 제거</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 교실 배경 (파란 체육복 학생 & 3학년 6반 친구들) -->
+  <div class="bg-classroom">
+    <div class="blackboard">
+      <div class="chalk-text">3학년 6반 교실</div>
+      <div class="chalk-sub">오늘의 목표: 쾌적한 교실 환경 조성</div>
+    </div>
+    
+    <!-- 중앙: 파란 체육복 입고 코 막으며 스프레이 뿌리는 학생 -->
+    <div class="student-center">
+      <div class="sweat-drop d1">💦</div>
+      <div class="sweat-drop d2">💦</div>
+      <div class="spray-cloud">
+        <div class="puff p1"></div>
+        <div class="puff p2"></div>
+        <div class="puff p3"></div>
+      </div>
+      <div class="student-body">
+        <div class="head">
+          <div class="hair"></div>
+          <div class="face">
+            <div class="brow left"></div>
+            <div class="brow right"></div>
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="blush"></div>
+            <div class="hand-nose">🖐️</div>
+            <div class="mouth"></div>
+          </div>
+        </div>
+        <div class="torso">
+          <div class="arm-left"></div>
+          <div class="arm-right">
+            <div class="spray-can">
+              <div class="cap"></div>
+              <div class="label">P</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 주변 교실 친구들 -->
+    <div class="classmate mate-1">
+      <div class="bubble">ugh</div>
+      <div class="head">
+        <div class="hair"></div>
+        <div class="face-green">
+          <div class="eyes-x">>_<</div>
+          <div class="mouth-open"></div>
+        </div>
+      </div>
+      <div class="uniform-blue">3-6</div>
+    </div>
+
+    <div class="classmate mate-2">
+      <div class="bubble">stink!</div>
+      <div class="head">
+        <div class="hair"></div>
+        <div class="face-normal">
+          <div class="eyes-pinch">><</div>
+          <div class="hand-cover">👃</div>
+        </div>
+      </div>
+      <div class="uniform-white"></div>
+    </div>
+
+    <div class="classmate mate-3">
+      <div class="bubble">ㅋㅋㅋ</div>
+      <div class="head">
+        <div class="hair"></div>
+        <div class="face-laugh">
+          <div class="eyes-laugh">^^</div>
+          <div class="mouth-laugh"></div>
+        </div>
+      </div>
+      <div class="uniform-blue">3-6</div>
+    </div>
+
+    <div class="classmate mate-4">
+      <div class="bubble">헉...</div>
+      <div class="head">
+        <div class="hair"></div>
+        <div class="face-shock">
+          <div class="eyes-shock">O_O</div>
+        </div>
+      </div>
+      <div class="uniform-white"></div>
+    </div>
+  </div>
+
+  <!-- 메인 콘텐트 인터페이스 -->
+  <main class="container">
+    <header class="header">
+      <div class="badge">3학년 6반 프로젝트</div>
+      <h1 class="title">우리 반 땀 냄새 제거</h1>
+      <p class="subtitle">체육 시간 후 상쾌한 교실을 만들기 위한 대안 탐색</p>
+    </header>
+
+    <div class="action-area">
+      <button id="findBtn" class="btn-main">
+        <span>대안 찾기</span>
+        <span id="btnArrow" class="arrow">▼</span>
+      </button>
+
+      <!-- 대안 버튼 목록 -->
+      <div id="optionsGroup" class="options-group hidden">
+        <button class="option-btn" data-value="페브리즘" data-use="90" data-desc="담당자를 정하여 체육 시간 후에 뿌리도록 함">
+          ✨ 페브리즘
+        </button>
+        <button class="option-btn" data-value="디퓨저" data-use="80" data-desc="교실 곳곳에 설치">
+          🌿 디퓨저
+        </button>
+        <button class="option-btn" data-value="샤워실 설치" data-use="30" data-desc="될 리가 없음">
+          🚿 샤워실 설치
+        </button>
+        <button class="option-btn" data-value="여분의 옷 준비" data-use="50" data-desc="되긴 하지만 귀찮음">
+          👕 여분의 옷 준비
+        </button>
+      </div>
+
+      <!-- 결과 출력 영역 -->
+      <div id="resultBox" class="result-box hidden">
+        <div class="result-card">
+          <div id="resultTitle" class="result-title"></div>
+          <div id="resultValue" class="result-value"></div>
+          
+          <div class="progress-bar-bg">
+            <div id="progressFill" class="progress-fill"></div>
+          </div>
+          
+          <div id="resultDesc" class="result-desc"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
